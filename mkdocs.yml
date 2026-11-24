@@ -84,6 +84,7 @@ nav:
   - 技术笔记:
       - notes/index.md
       - 工作信息总览: notes/work-overview.md
+      - 经验总结: notes/experience-summary.md
       - HLSL 着色器入门: notes/hlsl-shader.md
       - UE 材质开发: notes/ue-material.md
       - WPO 外扩与平滑法线: notes/ue-wpo-inflate.md

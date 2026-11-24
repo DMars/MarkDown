@@ -5,6 +5,7 @@
 ## 全部笔记
 
 - [工作信息总览](work-overview.md) — 全部工作资料的分类索引、时间线与文件清单
+- [经验总结](experience-summary.md) — 三条技术主线的方法论、踩坑清单与速查表
 - [HLSL 着色器入门](hlsl-shader.md) — 常用函数、语义与跨平台注意事项
 - [UE 材质开发](ue-material.md) — 材质节点、Custom 节点与性能考量
 - [WPO 外扩与平滑法线](ue-wpo-inflate.md) — 不破面原理、三种方案与材质接线
