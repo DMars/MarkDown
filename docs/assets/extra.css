@@ -1,0 +1,11 @@
+/* 自定义样式：可在此覆盖 Material 默认外观 */
+
+/* 让首页卡片网格更紧凑一些 */
+.grid.cards > ul > li {
+    min-width: 14rem;
+}
+
+/* 代码块圆角 */
+div.highlight code {
+    border-radius: 6px;
+}

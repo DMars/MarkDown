@@ -1,0 +1,102 @@
+# ===== 站点基本信息 =====
+site_name: DMars 的知识库
+site_description: 技术笔记、着色器开发与工具链沉淀
+site_author: DMars
+site_url: https://DMars.github.io/MarkDown/
+
+# ===== 仓库信息（开启"在 GitHub 上编辑"按钮）=====
+repo_url: https://github.com/DMars/MarkDown
+repo_name: DMars/MarkDown
+edit_uri: edit/main/docs/
+
+# ===== 主题配置 =====
+theme:
+  name: material
+  language: zh
+  features:
+    - navigation.tabs          # 顶部标签
+    - navigation.sections      # 侧边栏分组
+    - navigation.top           # 返回顶部
+    - navigation.tracking      # 滚动高亮当前目录
+    - navigation.expand        # 默认展开侧边栏
+    - search.suggest           # 搜索建议
+    - search.highlight         # 搜索关键词高亮
+    - search.share             # 复制搜索结果链接
+    - content.tabs.link        # 标签页联动
+    - content.code.copy        # 代码复制按钮
+    - content.code.annotate    # 代码注释
+    - content.tooltips         # 链接预览
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-7
+        name: 切换到深色模式
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-4
+        name: 切换到浅色模式
+  icon:
+    repo: fontawesome/brands/github
+  favicon: assets/favicon.svg
+
+# ===== 插件 =====
+plugins:
+  - search
+
+# ===== Markdown 扩展 =====
+markdown_extensions:
+  - admonition                       # 提示块 !!! note
+  - attr_list                        # 自定义属性
+  - md_in_html                       # HTML 中写 Markdown
+  - footnotes                        # 脚注
+  - tables                           # 表格
+  - toc:
+      permalink: true                # 标题锚点
+  - pymdownx.details                 # 可折叠块
+  - pymdownx.superfences:            # 代码块（支持 mermaid）
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true          # 标签页 === tab
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.keys                    # 按键样式
+  - pymdownx.tasklist:
+      custom_checkbox: true          # 任务清单
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+
+# ===== 导航结构 =====
+nav:
+  - 首页: index.md
+  - 技术笔记:
+      - notes/index.md
+      - HLSL 着色器入门: notes/hlsl-shader.md
+      - UE 材质开发: notes/ue-material.md
+  - 工具链:
+      - tools/index.md
+  - 关于: about.md
+
+# ===== 额外样式（可选）=====
+extra_css:
+  - assets/extra.css
+
+# ===== 页脚 =====
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/DMars
+      name: GitHub
+  generator: false
