@@ -2,6 +2,12 @@
 
 沉淀自动化脚本、版本管理与效率工具的实践记录。
 
+## 工作沉淀
+
+- [平滑法线烘焙工具链](dcc-bake-toolchain.md) — Blender / Houdini / 3ds Max / UE4.18 四条路径
+- [UE4.18 编辑器 Python 自动化](ue4-python-automation.md) — 受限工程的接口实测与材质生成脚本
+- [工作信息总览](../notes/work-overview.md) — 全部工作资料的分类索引
+
 ## Python 自动化
 
 Python 适合做管线自动化与批处理。常用场景：
@@ -29,6 +35,6 @@ for f in collect_files(Path("."), ".py"):
 
 ## 待补充
 
-- [ ] 添加具体工具的使用笔记
+- [x] 添加具体工具的使用笔记
 - [ ] 整理常用命令速查表
 - [ ] 记录环境配置步骤
