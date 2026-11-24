@@ -83,10 +83,18 @@ nav:
   - 首页: index.md
   - 技术笔记:
       - notes/index.md
+      - 工作信息总览: notes/work-overview.md
       - HLSL 着色器入门: notes/hlsl-shader.md
       - UE 材质开发: notes/ue-material.md
+      - WPO 外扩与平滑法线: notes/ue-wpo-inflate.md
+      - 不透明琥珀材质: notes/ue-amber-material.md
+      - UV 遮罩与三阶化着色: notes/ue-uv-mask.md
+      - UV 驱动轮播自发光: notes/ue-carousel-emissive.md
+      - 螺旋 WPO 与随机强度: notes/ue-wpo-spiral.md
   - 工具链:
       - tools/index.md
+      - 平滑法线烘焙工具链: tools/dcc-bake-toolchain.md
+      - UE4.18 编辑器 Python 自动化: tools/ue4-python-automation.md
   - 关于: about.md
 
 # ===== 额外样式（可选）=====
